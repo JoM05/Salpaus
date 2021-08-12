@@ -2,23 +2,17 @@ body{
 background-color: black;
 color: white;
 text-align: center
-
 }
-
 div{
   background-color: green
 }
-
-
-
 .otsikko{
   background-color: blue
-
-
 }
 #kana{
   width: 30%;
-text-align: right
+
+margin: auto
 }
 
 

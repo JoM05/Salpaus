@@ -1,13 +1,13 @@
 body{
-background-color: black;
-color: white;
+background-color: red;
+color: green;
 text-align: center
 }
 div{
   background-color: yellow
 }
 .otsikko{
-  background-color: green
+  background-color: black
 }
 #kana{
   width: 30%;

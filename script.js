@@ -1,3 +1,7 @@
+function laskutehtava(akaArvo, tokaArvo){
+  return ekaArvo + tokaArvo;
+}
+
 console.log("Täällä olaan!");
 
 let ika = 16; // numerot irjoitetaan ilman lainausmerkkejä
@@ -31,6 +35,17 @@ if(ika >= 16 || nimi == "Joona Martikainen"){
 else if( ika == 16 && nimi == "Keijo"){
   console.log("Onnea Keijo");
 }
+
+
+
+let pvm = "2021/08/18";
+pvmFin(pvm.split("/")[0],...[1],...[2]);
+function pvmFin (vuosi, kk, päivä){
+  return pv + "." + kk + "." + vuosi}
+
+
+
+
 
 
 

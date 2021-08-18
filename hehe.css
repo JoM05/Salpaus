@@ -1,18 +1,17 @@
 body{
-background-color: red;
-color: green;
+background-color: lightblue;
+color: black;
 text-align: center
 }
 div{
-  background-color: yellow
+  background-color: lightblue
 }
 .otsikko{
-  background-color: black
+  background-color:
 }
 #kana{
   width: 30%;
 
 margin: auto
 }
-
 

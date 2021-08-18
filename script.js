@@ -36,12 +36,13 @@ else if( ika == 16 && nimi == "Keijo"){
   console.log("Onnea Keijo");
 }
 
-
-
 let pvm = "2021/08/18";
-pvmFin(pvm.split("/")[0],...[1],...[2]);
+pvmFin(pvm.split("/")[0],...[8],...[18]);
 function pvmFin (vuosi, kk, päivä){
-  return pv + "." + kk + "." + vuosi}
+  return päivä + "." + kk + "." + vuosi}
+
+
+
 
 
 

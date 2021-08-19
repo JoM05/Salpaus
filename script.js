@@ -32,14 +32,15 @@ for(let i=0; i<=10; i++){
 if(ika >= 16 || nimi == "Joona Martikainen"){
   console.log("Onnea, et ole alaikäinen.");
 }
-else if( ika == 16 && nimi == "Keijo"){
-  console.log("Onnea Keijo");
-}
 
 let pvm = "2021/08/18";
-pvmFin(pvm.split("/")[0],...[8],...[18]);
-function pvmFin (vuosi, kk, päivä){
-  return päivä + "." + kk + "." + vuosi}
+
+function pvmFin(vuosi,kk,pvm){
+  return "Paivamaara oikeassa jarjestyksessa on " + pvm + "."  + kk + "." + vuosi;
+}
+
+console.log(pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]));
+
 
 
 

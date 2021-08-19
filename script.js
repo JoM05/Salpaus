@@ -39,19 +39,10 @@ function pvmFin(vuosi,kk,pvm){
   return "Paivamaara oikeassa jarjestyksessa on " + pvm + "."  + kk + "." + vuosi;
 }
 
-console.log(pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]));
 
-
-
-
-
-
-
-
-
-
-
-
+for(let i=0; i<16; i++){
+  console.log(i + " " + pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]));
+} 
 /*
 Monen
 rivin

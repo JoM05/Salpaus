@@ -66,17 +66,27 @@ for(let i=1; i<16; i++){
 document.querySelector('.lisaaNappi').addEventListener('click', e =>{
   e.preventDefault();
   console.log(document.querySelector('#kentta').value);
+
+  document.querySelector('.ilmoitus').innerHTML = "Kentän sisältö on: <b>" + document.querySelector('#kentta').value + "</b>";
+  
+  setTimeout(() => document.querySelector('.ilmoitus').innerHTML='', 3000);
 })
 
+document.querySelector('.merkinta').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log("Toimii!!");
+  
+  if(document.querySelector('#teht_a').checked){
+    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" checked> Tehtava A on nyt tehty!</li>';
+}
+else{
+  document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox"id="teht_a"> ei ole tehty</li>';
+}
 
+if(document.querySelector('#teht_b').checked){
+    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" checked> Tehtava B on nyt tehty!</li>';
+}
 
-
-/*
-Monen
-rivin
-kommentti
-*/
-
-
-
-
+else{
+  document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox"id="teht_b"> ei ole tehty</li>';
+}

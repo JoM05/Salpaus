@@ -59,12 +59,22 @@ for(let i=1; i<16; i++){
   console.log(i+ " " + pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]));
 } 
 
+
+//console.log(document.querySelector('#kentta').type);
+//console.log(document.querySelector('.lisaaNappi').value);
+
+document.querySelector('.lisaaNappi').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log(document.querySelector('#kentta').value);
+})
+
+
 /*
 Monen
 rivin
 kommentti
 */
 
-console.log(document.querySelector('#kentta'));
+
 
 

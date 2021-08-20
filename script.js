@@ -64,3 +64,7 @@ Monen
 rivin
 kommentti
 */
+
+console.log(document.querySelector('#kentta'));
+
+

@@ -76,19 +76,28 @@ document.querySelector('.merkinta').addEventListener('click', e =>{
   console.log("Toimii!!");
 
   
-if (document.querySelector('#teht_a').checked){
-    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" checked>Toimii</li>';
-}
-
-  else{
-    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" >Ei Toimii</li>';
-}
-
-if(document.querySelector('#teht_b').checked){
-    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" checked>Toimii</li>';
+ if (document.querySelector('#teht_a').checked){
+    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" checked> Valmis </li>' ;
 }
 
 
-  else{
-    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" >－Ei Toimii</li>';
-  }
+  else {
+    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" > Paina </li>' ;
+}
+
+
+if (document.querySelector('#teht_b').checked){
+    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" checked> Valmis </li>' ;
+}
+
+
+  else {
+    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" > Paina </li>' ;
+}
+
+
+
+
+
+});
+
